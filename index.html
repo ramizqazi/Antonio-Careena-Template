@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Careena</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header aria-label="navigation bar">
+    <img draggable="false" src='./assets/brand-logo.png' id="logo" alt="Inc Logo" />
+
+    <div class="nav-start">
+      <nav class="menu">
+        <ul class="menu-bar">
+          <li class="nav-link active-link"><a href="/">Home</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link"><a href="#">About</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link"><a href="#">Collection</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link"><a href="#">Gallary</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-link"><a href="#">Contact</a>
+            <div class="underline"></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-btns">
+        <button id="search">
+          <i class="bi bi-bag"></i>
+        </button>
+        <button id="search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id='hero-section'>
+      <div style="z-index: 10;">
+        <h1 class="hero-title">A<br />Glamorous<br />Twist</h1>
+        <h2 class="hero-description">To The Adornments you wear</h2>
+      </div>
+      <div class="hero-images-container">
+        <div class="grid-item">
+          <img draggable="false" class="hero-image1" src="./assets/hero-image-1.png" />
+        </div>
+        <div class="grid-item">
+          <img draggable="false" class="hero-image2" src="./assets/hero-image-2.png" />
+        </div>
+        <div class="grid-item">
+          <img draggable="false" class="hero-image3" src="./assets/hero-image-3.png" />
+        </div>
+        <div class="grid-item">
+          <img draggable="false" class="hero-image4" src="./assets/hero-image-4.png" />
+        </div>
+      </div>
+    </section>
+    <section id="collection-section">
+      <h1 class="heading">Fine<br />Collection</h1>
+      <div class="product-list">
+        <div class="proudct-item">
+          <img src="./assets/product-image-1.png" class="product-img"/>
+          <p class="proudct-name">Product Name</p>
+        </div>
+        <div class="proudct-item">
+          <img src="./assets/product-image-2.png" class="product-img"/>
+          <p class="proudct-name">Product Name</p>
+        </div>
+        <div class="proudct-item">
+          <img src="./assets/product-image-3.png" class="product-img"/>
+          <p class="proudct-name">Product Name</p>
+        </div>
+        <div class="proudct-item">
+          <img src="./assets/product-image-4.png" class="product-img"/>
+          <p class="proudct-name">Product Name</p>
+        </div>
+      </div>
+    </section>
+    <section id="aboutUs-section">
+      <div class="aboutUs-left">
+        <h1 class="aboutUs-heading">We Create Luxury<br />Jewelry</h1>
+        <p class="aboutUs-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        <button class="aboutUs-btn">
+          About Us
+        </button>
+      </div>
+      <div class="aboutUs-right">
+        <img src="/assets/about-us.png" class="aboutUs-image" />
+      </div>
+    </section>
+    <section id="gallary-section">
+      <h1 class="gallary-heading">Ideating the<br />passion into<br /> profession</h1>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
