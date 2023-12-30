@@ -373,8 +373,9 @@ main {
 
 #aboutUs-section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 100px;
+  padding: 0 100px;
 }
 
 .aboutUs-left {
@@ -386,26 +387,27 @@ main {
   line-height: 100%;
   font-weight: bold;
   text-align: left;
-  margin: 40px 0;
+  padding: 40px 0;
 }
 
 .aboutUs-description {
   font-size: 18px;
   width: 500px;
   color: #403e3e;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .aboutUs-right {
   flex: 1;
+  text-align: right;
 }
 
 .aboutUs-btn {
   font-size: 18px;
   padding: 9px 35px;
   color: white;
-  font-family: 'Playfair Display';
-  background-color: #A59D99;
+  font-family: "Playfair Display";
+  background-color: #a59d99;
 }
 .aboutUs-btn:hover {
   background-color: #8c8682;
@@ -413,7 +415,11 @@ main {
 
 @media (max-width: 1400px) {
   #aboutUs-section {
-    margin: 150px 20px;
+    padding: 0px 30px;
+  }
+
+  .aboutUs-description {
+    width: auto;
   }
 
   .aboutUs-image {
@@ -423,11 +429,20 @@ main {
 
 @media (max-width: 800px) {
   #aboutUs-section {
+    row-gap: 50px;
     flex-direction: column;
+  }
+  .aboutUs-heading {
+    font-size: 40px;
+  }
+
+  .aboutUs-description {
+    width: auto;
+    font-size: 16px;
   }
 
   .aboutUs-image {
-    height: 600px;
+    height: 400px;
   }
 }
 
@@ -439,9 +454,9 @@ main {
   align-items: center;
   background-size: contain;
   background-position: right;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   background-repeat: no-repeat;
-  background-image: url('./assets/hand.png');
+  background-image: url("./assets/hand.png");
 }
 
 .gallary-heading {
@@ -452,10 +467,106 @@ main {
   text-align: left;
 }
 
-
 @media (max-width: 1400px) {
   #gallary-section {
     background-size: cover;
     background-position: left;
+  }
+}
+
+#contact {
+  margin-bottom: 150px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-center-image {
+  width: 550px;
+  height: 500px;
+  z-index: 10;
+}
+
+.contact-left {
+  width: 300px;
+  z-index: 50;
+  margin-right: -70px;
+  margin-bottom: -50px;
+  padding: 60px 35px;
+  align-self: flex-end;
+  background-color: #a59e99;
+}
+
+.contact-white-text {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-white-btn {
+  color: white;
+  font-size: 18px;
+  padding: 7px 22px;
+  font-weight: 700;
+  margin: 0 20px;
+  font-family: "Playfair Display";
+  border: 2px solid white;
+}
+.contact-white-btn:hover {
+  opacity: 0.5;
+}
+
+.contact-right {
+  width: 300px;
+  z-index: 50;
+  margin-top: 50px;
+  margin-left: -70px;
+  padding: 60px 35px;
+  align-self: flex-start;
+  background-color: #f5f5f5;
+}
+.contact-black-btn {
+  color: black;
+  font-size: 18px;
+  padding: 7px 22px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  border: 2px solid black;
+}
+.contact-black-btn:hover {
+  opacity: 0.5;
+}
+
+.contact-right-heading {
+  font-size: 30px;
+}
+.contact-right-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 786px) {
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-center-image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .contact-left {
+    margin: 0;
+    width: 100%;
+    align-self: auto;
+    text-align: center;
+  }
+  .contact-right {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-self: auto;
   }
 }
