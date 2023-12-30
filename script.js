@@ -25,6 +25,7 @@ navLinks.forEach(function (navLink) {
     var activeLink = document.querySelector('.active-link');
     if (activeLink) {
       activeLink.classList.remove('active-link');
+      toggleHamburger();
     }
 
     // Add 'active-link' class to the clicked 'nav-link' element
